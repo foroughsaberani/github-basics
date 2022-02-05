@@ -1,0 +1,148 @@
+* {
+   margin: 0;
+ }
+ .left, .right {
+   float: left;
+   width: 20%; /* The width is 20%, by default */
+ }
+ 
+ .main {
+   float: left;
+   width: 60%; /* The width is 60%, by default */
+ }
+ 
+ /* Use a media query to add a breakpoint at 800px: */
+ @media screen and (max-width: 800px) {
+   .left, .main, .right {
+     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+   }
+ }
+
+html{
+    scroll-behavior: smooth;
+ }
+
+del{
+    padding: 30px; 
+    color: rgb(11, 58, 99);
+     /* font-size: large;
+     font-family: lalezar;  */
+ }
+
+
+ .bookContainer {
+
+    margin: auto auto;
+    margin-top: 70px; 
+    width: 600px;
+    border: 1px solid; 
+    padding: 30px;
+    box-shadow: 2px 4px ;
+    border-radius: 20px;
+    background-color:rgb(220, 245, 245);
+    /* font-family: lalezar; */
+ }
+
+
+ p{
+    width: 600px; 
+    text-align: justify; 
+    /* padding: 20px; */
+    /* font-family: lalezar;
+    */
+    }
+    img{
+        width: 600px;
+        height: 600px;
+        /* padding-right: 50px; */
+       border-radius: 10px;
+    }
+    
+ 
+         
+         body{
+/* 
+            background-color: rgb(218, 196, 238); */
+            background-image: url(/images/paper.jpg) ; 
+            font-family: lalezar;
+         }
+
+         h3{
+
+            padding-bottom: 20px;
+            color: black;
+            /* font-family: lalezar; */
+         }
+
+   
+            /* ul{
+
+             padding: 0px;
+             margin: 0px;
+             border: 1px solid;
+            background-color:black;
+             text-decoration: none;
+             list-style-type: none;
+             overflow: hidden;
+             position: fixed ;
+             top: 0px;
+             width: 100%;
+             font-family: lalezar;
+
+            } */
+            ul {
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+               /* overflow: hidden; */
+               border: 1px solid #e7e7e7;
+               background-color: #9b7777;
+               position: fixed;
+               top: 0;
+               width: 100%;
+               font-family: lalezar;
+
+             }     
+
+li{
+   float: right ;
+}
+
+li a{
+display: block;
+color: rgb(238, 234, 241);
+text-align: center;
+padding: 14px 16px;
+text-decoration:none ;
+font-family: lalezar;
+}
+ .top{
+background-color: red;
+font-size: 20px;
+color: rgb(220, 245, 245);
+position: fixed;
+bottom: 10px;
+right: 10px;
+padding: 30px;
+border-radius: 20px ;
+text-decoration:none ;
+font-family: lalezar;
+cursor:pointer;
+ }
+
+ .top:hover {
+    background-color: rgb(201, 188, 188);
+ }
+
+ li a:hover:not(.active) {
+   background-color: rgb(230, 41, 41);
+ }
+ 
+ li a.active {
+   color: white;
+   background-color: #04aa6d;
+ }
+ li a.active2 {
+   color: white;
+   background-color:tomato;
+ }
