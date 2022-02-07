@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="tax.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Semantic UI CDN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+
+</head>
+<body dir="rtl">
+    <div class="ui menu">
+        <div class="header item">
+         مالیات
+        </div>
+        <a class="item">
+         ثبت شرکت
+        </a>
+        <a class="item">
+          ارتباط با مشاوران
+        </a>
+        <a class="item">
+          درباه ما
+        </a>
+  </div> 
+<div class="outbox">
+<h1>نحوه محاسبات مالیات بر ارزش افزوده</h1>
+<p> 
+    ارزش افزوده از سال 87 با نرخ 3 درصد آغاز شد و به مرور زمان این درصد افزایش پیدا کرد تا به امروز
+     که نرخ مالیات ارزش افزوده به 9 درصد رسیده است. از این نرخ 6 درصد به عنوان مالیات ارزش افزوده و 3 درصد به عنوان عوارض ارزش افزوده تقسیم می شود
+</p>
+</div>
+
+    <div class="input" >
+      
+<input type="number" placeholder="مبلغ قبل از تخفیف وارد کنید" id="amount">
+<button onclick="valueAddedtax()"> کلیک کنید</button>
+
+<h1 id="demo"> </h1>
+<h1 id="demo1"> </h1>
+<img class="bgimage" src="/images/tax-income-pie.jpg">
+</div>
+
+    <script>
+function valueAddedtax() {
+var value = document.getElementById("amount").value;
+var tax = 0.09;
+var vat = value * tax;
+var finalprice = vat + Number(value); 
+document.getElementById("demo").innerHTML = "  مالیات بر ارزش افزوده کل ="+vat+ "تومان";
+document.getElementById("demo1").innerHTML = " قیمت نهایی =" + finalprice+"تومان";
+}
+</script>
+
+</body>
+</html>
