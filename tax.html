@@ -40,7 +40,6 @@
 <input type="number" placeholder="مبلغ قبل از تخفیف وارد کنید" id="amount">
 <button onclick="valueAddedtax()"> کلیک کنید</button>
 
-<h1 id="demo"> </h1>
 <h1 id="demo1"> </h1>
 <img class="bgimage" src="/images/tax-income-pie.jpg">
 </div>
@@ -53,6 +52,30 @@ var vat = value * tax;
 var finalprice = vat + Number(value); 
 document.getElementById("demo").innerHTML = "  مالیات بر ارزش افزوده کل ="+vat+ "تومان";
 document.getElementById("demo1").innerHTML = " قیمت نهایی =" + finalprice+"تومان";
+}
+function getData(){
+var tax = calcTax(100);
+document.getElementById("demo1").innerHTML = tax;
+} 
+
+function calcTax(fee) {
+var percent = 0.09;
+var tax = fee * percent;
+var total = fee + total;
+return total;
+}
+
+function getData() {
+
+  var age = calcAge(1372);
+  document.getElementById("demo").innerHTML = age; 
+}
+
+
+function calcAge(bYear){
+var thisyear = 1400;
+var total = thisyear - bYear;
+return total;
 }
 </script>
 
