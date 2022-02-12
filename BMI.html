@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +9,29 @@
 </head>
 
 <body>
+    <!-- please add input Type and placeHolder attribute -->
     <input id="height" />
-    <input id="weight" /> 
+    <input id="weight" />
     <button onclick="getData()">click</button>
-    <p id="bmi"></p> 
+    <p id="bmi"></p>
     <Script>
-function getData(){
-var height = document.getElementById("height").value;
-var weight = document.getElementById("weight").value;
-var bmi = calcBmi(height,weight);
-document.getElementById("bmi").innerHTML = bmi;
+        //excellent you break your code in 2 functions and used camelCase naming
+        function getData() {
+            var height = document.getElementById("height").value;
+            var weight = document.getElementById("weight").value;
+            var bmi = calcBmi(height, weight);
+            document.getElementById("bmi").innerHTML = bmi;
 
-}
-function calcBmi(height,weight) {
-var bmi = weight / (height * height);
-return bmi;
+        }
+        function calcBmi(height, weight) {
+            var bmi = weight / (height * height);
+            return bmi;
 
-}
+        }
 
 
     </Script>
 
 </body>
+
 </html>
