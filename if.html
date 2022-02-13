@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="weight" type="number" placeholder="weight:50" />
+    <input id="height" type="number" placeholder="height:1.65" />
+    <button onclick="getData()"> check </button>
+    <p id="demo"></p>
+   
+   <script>
+function getData() {
+             let height = document.getElementById("height").value;
+            let weight = document.getElementById("weight").value;
+            let bmi = calcBmi(height, weight);
+            if(bmi<18.5){
+                document.getElementById("demo").innerHTML="under weight";
+            }
+            if(bmi>=18.5 && bmi<24.5){
+                document.getElementById("demo").innerHTML="ideal weight";
+            }
+            if(bmi>=24.5 && bmi<29.9){
+                document.getElementById("demo").innerHTML="over weight";  
+            }
+            if(bmi>=29.9){
+                document.getElementById("demo").innerHTML="fat";  
+            }
+
+        }
+        function calcBmi(height, weight) {
+        return  weight / (height * height);
+        }
+
+    
+
+
+
+
+   </script> 
+</body>
+</html>

@@ -6,9 +6,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- you couldn't use 2 title tag here -->
-  <title>Document</title>
-  <title>Semantic UI CDN</title>
+ 
+  <title>tax</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
@@ -32,10 +31,12 @@
   </div>
   <div class="outbox">
     <h1>نحوه محاسبات مالیات بر ارزش افزوده</h1>
-    <!-- if your code or text content is too long break it in separated line -->
+
     <p>
-      ارزش افزوده از سال 87 با نرخ 3 درصد آغاز شد و به مرور زمان این درصد افزایش پیدا کرد تا به امروز
-      که نرخ مالیات ارزش افزوده به 9 درصد رسیده است. از این نرخ 6 درصد به عنوان مالیات ارزش افزوده و 3 درصد به عنوان
+      ارزش افزوده از سال 87 با نرخ 3 درصد آغاز شد 
+      و به مرور زمان این درصد افزایش پیدا کرد تا به امروز
+      که نرخ مالیات ارزش افزوده به 9 درصد رسیده است. 
+      از این نرخ 6 درصد به عنوان مالیات ارزش افزوده و 3 درصد به عنوان
       عوارض ارزش افزوده تقسیم می شود
     </p>
   </div>
@@ -50,14 +51,14 @@
   </div>
 
   <script>
-    // use camelCaseNameing, here valueAddedTax is better
-    function valueAddedtax() {
+  
+    function valueAddedTax() {
       var value = document.getElementById("amount").value;
       var tax = 0.09;
       var vat = value * tax;
 
-      //finalPrice is better naming
-      var finalprice = vat + Number(value); 
+
+      var finalPrice = vat + Number(value); 
 
       document.getElementById("demo").innerHTML = "  مالیات بر ارزش افزوده کل =" + vat + "تومان";
       document.getElementById("demo1").innerHTML = " قیمت نهایی =" + finalprice + "تومان";
@@ -82,7 +83,7 @@
 
 
     function calcAge(bYear) {
-      var thisyear = 1400; //thisYear is better naming
+      var thisYear = 1400;
       var total = thisyear - bYear;
       return total;
     }

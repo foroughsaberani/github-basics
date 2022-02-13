@@ -9,25 +9,25 @@
 </head>
 
 <body>
-    <!-- please add input Type and placeHolder attribute -->
-    <input id="height" />
-    <input id="weight" />
-    <button onclick="getData()">click</button>
+    <input type="number" placeholder="height:1.65" id="height" />
+    <input type="number" placeholder="weight:50" id="weight" />
+    <button onclick="getData()">click </button>
     <p id="bmi"></p>
     <Script>
-        //excellent you break your code in 2 functions and used camelCase naming
-        function getData() {
-            var height = document.getElementById("height").value;
-            var weight = document.getElementById("weight").value;
-            var bmi = calcBmi(height, weight);
-            document.getElementById("bmi").innerHTML = bmi;
-
-        }
         function calcBmi(height, weight) {
-            var bmi = weight / (height * height);
-            return bmi;
 
+        
+            return weight / (height * height);
+    
         }
+       
+        function getData() {
+            let height = document.getElementById("height").value;
+            let weight = document.getElementById("weight").value;
+            let bmi = calcBmi(height, weight);
+            document.getElementById("bmi").innerHTML = bmi;
+        }
+     
 
 
     </Script>
